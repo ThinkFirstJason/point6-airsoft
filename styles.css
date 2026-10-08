@@ -787,3 +787,5 @@ body::after {
   backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
 }
+/* letters box shrinks to the glyphs, so the stripe can never outgrow "POINT 6" */
+.wordmark .wm-text { display: inline-block; vertical-align: top; }
