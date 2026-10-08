@@ -762,3 +762,12 @@ body::after {
 .rule::after { bottom: auto; top: 26px; right: 26px; }
 @media (max-width: 1240px) { .sec-num { left: auto; right: 0; top: -0.62em; font-size: clamp(110px, 14vw, 180px); } }
 @media (max-width: 860px) { .sec-num, .field__copy .sec-num { top: -0.3em; font-size: 110px; } }
+
+/* reticle sits on the treeline, off the player in the placeholder photo */
+.reticle { width: clamp(130px, 12vw, 190px); left: 74%; top: 11%; }
+.hero__coords { left: calc(74% + clamp(130px, 12vw, 190px) + 10px); top: calc(11% + 16px); }
+@media (max-width: 1100px) { .hero__coords { left: auto; right: var(--gutter); top: calc(11% + clamp(130px, 12vw, 190px) + 8px); text-align: right; } }
+@media (max-width: 860px) {
+  .reticle { width: 96px; left: auto; right: var(--gutter); top: 30%; }
+  .hero__coords { top: calc(30% + 104px); }
+}
