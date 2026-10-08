@@ -771,3 +771,19 @@ body::after {
   .reticle { width: 96px; left: auto; right: var(--gutter); top: 30%; }
   .hero__coords { top: calc(30% + 104px); }
 }
+
+/* ---------- Wordmark: stripe anchored to the letters, not the whole block ---------- */
+.wm-text .wm-strike { left: -0.04em; right: -0.06em; top: 60%; }
+/* tagline never widens the logo (it would stretch the bars and stripe) */
+.wm-sub { width: 0; white-space: nowrap; }
+
+/* ---------- Mobile reticle: pinned near the top, label beside it like desktop ---------- */
+@media (max-width: 860px) {
+  .reticle { width: 92px; left: auto; right: var(--gutter); top: 92px; }
+  .hero__coords { left: auto; right: calc(var(--gutter) + 92px + 12px); top: 118px; text-align: right; }
+}
+.hero__coords {
+  padding: 6px 10px; background: rgba(11, 11, 12, 0.62);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%);
+}
