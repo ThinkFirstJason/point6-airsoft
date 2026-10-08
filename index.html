@@ -66,7 +66,16 @@
       <div class="hero__media" aria-hidden="true">
         <img src="assets/img/night-op-truck.jpg" alt="" fetchpriority="high">
       </div>
+      <div class="hero__leak" aria-hidden="true"></div>
       <div class="hero__grain" aria-hidden="true"></div>
+      <svg class="reticle" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="96" class="reticle__ring"/>
+        <circle cx="100" cy="100" r="70" class="reticle__dash"/>
+        <circle cx="100" cy="100" r="3" class="reticle__dot"/>
+        <path d="M100 0v40M100 160v40M0 100h40M160 100h40" class="reticle__tick"/>
+        <path d="M100 52v14M100 134v14M52 100h14M134 100h14" class="reticle__tick reticle__tick--hot"/>
+      </svg>
+      <div class="hero__coords mono" aria-hidden="true"><span>OBJ // VEHICLE</span><span>RNG 042M</span></div>
 
       <div class="hero__inner">
         <h1 class="wordmark wordmark--hero" aria-label="Point 6 Airsoft">
@@ -104,10 +113,21 @@
       <div class="hero__scroll mono" aria-hidden="true">SCROLL FOR BRIEFING</div>
     </section>
 
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__tape ticker__tape--back"></div>
+      <div class="ticker__tape ticker__tape--front">
+        <div class="ticker__track">
+          <span>Night Ops</span><i></i><span>CQB Zone</span><i></i><span>37 Acres</span><i></i><span>45 Structures</span><i></i><span>Foster, KY</span><i></i><span>Rentals On-Site</span><i></i>
+          <span>Night Ops</span><i></i><span>CQB Zone</span><i></i><span>37 Acres</span><i></i><span>45 Structures</span><i></i><span>Foster, KY</span><i></i><span>Rentals On-Site</span><i></i>
+        </div>
+      </div>
+    </div>
+
     <!-- ============ OPERATIONS ============ -->
-    <section class="section" id="ops">
+    <section class="section tex-topo acc-red" id="ops">
       <div class="wrap">
         <header class="sec-head reveal">
+          <span class="sec-num" aria-hidden="true">01</span>
           <p class="eyebrow mono"><span>01</span> Operations</p>
           <h2>Upcoming deployments</h2>
           <p class="lede">Open play days and night ops. Show up, sign in, gear up. Every event is weather dependent, so check our Facebook the morning of.</p>
@@ -121,7 +141,7 @@
               <span class="op__mon mono">OCT</span>
             </div>
             <div class="op__body">
-              <div class="op__tags mono"><span class="tag tag--red">Night Op</span><span class="tag">Open Play</span></div>
+              <div class="op__tags mono"><span class="tag tag--hot">Night Op</span><span class="tag">Open Play</span></div>
               <h3>Night Op: Open Play</h3>
               <p class="mono op__time">1600 &ndash; 2200 &middot; Open play after dark</p>
             </div>
@@ -163,7 +183,7 @@
     </section>
 
     <!-- ============ THE FIELD ============ -->
-    <section class="section section--alt" id="field">
+    <section class="section section--alt section--slant acc-green" id="field">
       <div class="wrap field">
         <div class="field__media reveal">
           <figure class="frame">
@@ -176,16 +196,17 @@
 
         <div class="field__copy">
           <header class="sec-head reveal">
-            <p class="eyebrow mono"><span>02</span> The Field</p>
+            <span class="sec-num" aria-hidden="true">02</span>
+          <p class="eyebrow mono"><span>02</span> The Field</p>
             <h2>37 acres of Kentucky ground</h2>
             <p class="lede">Point 6 is a recreational airsoft field in Foster, KY, built for first-timers, friend groups and regulars. Games are structured and refereed, and we care more about fair play than about winning. It's one of the first recreational airsoft fields in Kentucky, and players drive in from Northern Kentucky, Cincinnati, Ohio and Lexington.</p>
           </header>
 
           <dl class="stats reveal">
-            <div class="stat"><dt class="mono">Area of Operations</dt><dd>37<small>acres</small></dd></div>
-            <div class="stat"><dt class="mono">Structures</dt><dd>45<small>buildings</small></dd></div>
-            <div class="stat"><dt class="mono">Close Quarters</dt><dd>CQB<small>zone</small></dd></div>
-            <div class="stat"><dt class="mono">After Dark</dt><dd>Night<small>ops</small></dd></div>
+            <div class="stat acc-green"><dt class="mono">Area of Operations</dt><dd>37<small>acres</small></dd></div>
+            <div class="stat acc-blue"><dt class="mono">Structures</dt><dd>45<small>buildings</small></dd></div>
+            <div class="stat acc-red"><dt class="mono">Close Quarters</dt><dd>CQB<small>zone</small></dd></div>
+            <div class="stat acc-magenta"><dt class="mono">After Dark</dt><dd>Night<small>ops</small></dd></div>
           </dl>
         </div>
       </div>
@@ -202,16 +223,17 @@
     </section>
 
     <!-- ============ GAME MODES ============ -->
-    <section class="section" id="modes">
+    <section class="section tex-topo acc-blue" id="modes">
       <div class="wrap">
         <header class="sec-head reveal">
+          <span class="sec-num" aria-hidden="true">03</span>
           <p class="eyebrow mono"><span>03</span> Game Modes</p>
           <h2>A typical game day</h2>
           <p class="lede">Five rounds, each one a different mode. You get 30 minutes between rounds to reload, rehydrate and swap batteries.</p>
         </header>
 
         <ol class="brief">
-          <li class="brief__row reveal">
+          <li class="brief__row reveal acc-red">
             <span class="brief__time mono">1105<i>&ndash;</i>1130</span>
             <span class="brief__code mono">OP-01</span>
             <div class="brief__body">
@@ -219,7 +241,7 @@
               <p>Land the hit, then confirm it. Played free-for-all or as even teams, depending on how many players show up.</p>
             </div>
           </li>
-          <li class="brief__row reveal">
+          <li class="brief__row reveal acc-magenta">
             <span class="brief__time mono">1200<i>&ndash;</i>1245</span>
             <span class="brief__code mono">OP-02</span>
             <div class="brief__body">
@@ -227,7 +249,7 @@
               <p>Two teams, head to head. When you're hit, respawn and get back in. Lives are limited or unlimited depending on the round.</p>
             </div>
           </li>
-          <li class="brief__row reveal">
+          <li class="brief__row reveal acc-green">
             <span class="brief__time mono">1315<i>&ndash;</i>1400</span>
             <span class="brief__code mono">OP-03</span>
             <div class="brief__body">
@@ -235,7 +257,7 @@
               <p>One player, or a squad of up to 8, starts out infected. Everyone they tag joins them. Last survivor wins.</p>
             </div>
           </li>
-          <li class="brief__row reveal">
+          <li class="brief__row reveal acc-blue">
             <span class="brief__time mono">1430<i>&ndash;</i>1515</span>
             <span class="brief__code mono">OP-04</span>
             <div class="brief__body">
@@ -243,7 +265,7 @@
               <p>Points across the field are marked with colored flags. Your team has to capture them and hold them.</p>
             </div>
           </li>
-          <li class="brief__row reveal">
+          <li class="brief__row reveal acc-amber">
             <span class="brief__time mono">1545<i>&ndash;</i>1630</span>
             <span class="brief__code mono">OP-05</span>
             <div class="brief__body">
@@ -256,16 +278,17 @@
     </section>
 
     <!-- ============ LOADOUT ============ -->
-    <section class="section section--alt" id="loadout">
+    <section class="section section--alt section--slant tex-halftone acc-magenta" id="loadout">
       <div class="wrap">
         <header class="sec-head reveal">
+          <span class="sec-num" aria-hidden="true">04</span>
           <p class="eyebrow mono"><span>04</span> Loadout &amp; Rentals</p>
           <h2>No gear? No problem.</h2>
           <p class="lede">We rent on-site to first-time players, families, birthday parties and groups. The armory is still small while the field grows, so call ahead if your group needs several rentals.</p>
         </header>
 
         <div class="loadout">
-          <div class="panel reveal">
+          <div class="panel reveal acc-blue">
             <div class="panel__head mono"><span>Armory</span><span>On-site rental</span></div>
             <ul class="kit">
               <li><span class="kit__k">Rental rifles</span><span class="kit__v mono">Available</span></li>
@@ -276,7 +299,7 @@
               <li><span class="kit__k">Tactical gear</span><span class="kit__v mono">Limited</span></li>
             </ul>
           </div>
-          <div class="panel reveal">
+          <div class="panel reveal acc-amber">
             <div class="panel__head mono"><span>Bring your own</span><span>Required</span></div>
             <ul class="kit">
               <li><span class="kit__k">Boots</span><span class="kit__v mono kit__v--red">Required</span></li>
@@ -286,7 +309,7 @@
               <li><span class="kit__k">Signed waiver</span><span class="kit__v mono kit__v--red">Required</span></li>
             </ul>
           </div>
-          <div class="panel panel--cta reveal">
+          <div class="panel panel--cta reveal acc-magenta">
             <div class="panel__head mono"><span>Private ops</span><span>Groups</span></div>
             <h3>Birthdays, teams, groups</h3>
             <p>Book the field for your own crew. Games are structured and supervised, and rentals are available for anyone who needs them.</p>
@@ -297,9 +320,10 @@
     </section>
 
     <!-- ============ RULES ============ -->
-    <section class="section" id="roe">
+    <section class="section tex-topo acc-amber" id="roe">
       <div class="wrap">
         <header class="sec-head reveal">
+          <span class="sec-num" aria-hidden="true">05</span>
           <p class="eyebrow mono"><span>05</span> Rules of Engagement</p>
           <h2>Know the ROE before you step off</h2>
           <p class="lede">Read these before your first game. Every player on the field is expected to know them.</p>
@@ -323,37 +347,37 @@
         </div>
 
         <div class="rules">
-          <article class="rule reveal">
+          <article class="rule reveal acc-amber">
             <span class="rule__n mono">R-01</span>
             <h3>Eye protection</h3>
             <p>Wear airsoft-rated eyewear at all times on the field. Kids have to wear safe eyewear too.</p>
           </article>
-          <article class="rule reveal">
+          <article class="rule reveal acc-red">
             <span class="rule__n mono">R-02</span>
             <h3>Hits</h3>
             <p>A hit anywhere on your body counts. Hits on your gun or gear don't, and neither do ricochets. Avoid head shots up close.</p>
           </article>
-          <article class="rule reveal">
+          <article class="rule reveal acc-green">
             <span class="rule__n mono">R-03</span>
             <h3>Medic</h3>
             <p>When you're hit, you bleed out after 30 seconds. To revive you, a medic keeps a hand on your shoulder for 10 seconds.</p>
           </article>
-          <article class="rule reveal">
+          <article class="rule reveal acc-blue">
             <span class="rule__n mono">R-04</span>
             <h3>Respawn</h3>
             <p>Depends on the mode. You either go back to a set respawn point, walk 35 steps away from the gunfire, or stay down until a medic revives you.</p>
           </article>
-          <article class="rule reveal">
+          <article class="rule reveal acc-magenta">
             <span class="rule__n mono">R-05</span>
             <h3>Grenades &amp; pyro</h3>
             <p>Pyro, spring grenades, claymores and smoke are allowed. Anything that could start a fire is not.</p>
           </article>
-          <article class="rule reveal">
+          <article class="rule reveal acc-green">
             <span class="rule__n mono">R-06</span>
             <h3>Lasers &amp; lights</h3>
             <p>Red lasers and flashlights are allowed. Green lasers are banned. Never aim a laser at anyone's face.</p>
           </article>
-          <article class="rule rule--wide reveal">
+          <article class="rule rule--wide reveal acc-red">
             <span class="rule__n mono">R-07</span>
             <h3>Conduct</h3>
             <p>No vandalism and no violence. Don't shoot bystanders, houses or anyone who isn't playing. Be respectful to players, refs and neighbors.</p>
@@ -378,15 +402,16 @@
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section class="section" id="contact">
+    <section class="section tex-topo acc-green" id="contact">
       <div class="wrap">
         <header class="sec-head reveal">
+          <span class="sec-num" aria-hidden="true">06</span>
           <p class="eyebrow mono"><span>06</span> Contact</p>
           <h2>Rally point</h2>
         </header>
 
         <div class="contact">
-          <div class="panel reveal">
+          <div class="panel reveal acc-green">
             <div class="panel__head mono"><span>Location</span><span>Foster, KY</span></div>
             <address class="addr">
               4584 New Zion Rd<br>Foster, KY 41043
@@ -395,7 +420,7 @@
             <a class="btn btn--ghost" href="https://goo.gl/maps/huuUhdXbTxQWAnvr9" target="_blank" rel="noopener">Open in Maps</a>
           </div>
 
-          <div class="panel reveal">
+          <div class="panel reveal acc-red">
             <div class="panel__head mono"><span>Comms</span><span>Call or message</span></div>
             <ul class="comms">
               <li><span class="mono">PHONE</span><a href="tel:+18594666429">859-466-6429</a></li>
@@ -404,7 +429,7 @@
             <a class="btn btn--red" href="mailto:point6airsoft@yahoo.com?subject=Private%20Op%20Request&amp;body=Date%3A%0AGroup%20size%3A%0ARentals%20needed%3A%0AOccasion%3A">Book a Private Op</a>
           </div>
 
-          <div class="panel reveal">
+          <div class="panel reveal acc-blue">
             <div class="panel__head mono"><span>Intel</span><span>Day-of updates</span></div>
             <p class="muted">Weather calls, new builds and night op announcements go up on Facebook first.</p>
             <ul class="social">
